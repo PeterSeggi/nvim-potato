@@ -1,3 +1,3 @@
 require "potato.options"
 require "potato.keymaps"
-require "potato,packages"
+require "potato.packages"
