@@ -51,11 +51,18 @@ return packer.startup(function(use)
   -- Colorschemes
   use "EdenEast/nightfox.nvim" -- Nightfox colorscheme
   use 'folke/tokyonight.nvim' -- Tokyonight colorscheme
-  
-  -- cmp plugins
-  use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
 
+  -- cmp plugins
+  use "hrsh7th/nvim-cmp"    -- The completion plugin
+  use "hrsh7th/cmp-buffer"  -- buffer completions
+  use "hrsh7th/cmp-path"    -- path completitions
+  use "hrsh7th/cmp-cmdline" -- comand line completitions
+
+  -- snippet plugins
+  use "L3MON4D3/LuaSnip"             -- main snip plugins
+  use "saadparwaiz1/cmp_luasnip"     -- snippet completitions
+  use "rafamadriz/friendly-snippets" -- various snippets
+  
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
