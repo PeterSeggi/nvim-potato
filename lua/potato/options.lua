@@ -38,5 +38,6 @@ vim.opt.guifont = "monospace:h17"               -- the font used in graphical ne
 vim.opt.shortmess:append "c"
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
+vim.cmd [[autocmd InsertEnter * norm zz]]
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
