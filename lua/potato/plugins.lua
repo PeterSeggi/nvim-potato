@@ -11,7 +11,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     "https://github.com/wbthomason/packer.nvim",
     install_path,
   }
-  print "Installing packer close and reopen Neovim..."
+  print "Installing packer. Close and reopen Neovim..."
   vim.cmd [[packadd packer.nvim]]
 end
 
@@ -26,6 +26,7 @@ vim.cmd [[
 -- Use a protected call so we don't error out on first use
 local status_ok, packer = pcall(require, "packer")
 if not status_ok then
+  print("Something went wrong with packer. Check the config")
   return
 end
 
@@ -40,14 +41,22 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
-  -- My plugins here
+  
+  -- General purpose plugins go here 
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+
+
+  -- Colorschemes
   use "EdenEast/nightfox.nvim" -- Nightfox colorscheme
+  use 'folke/tokyonight.nvim' -- Tokyonight colorscheme
+  
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
+
 end)
