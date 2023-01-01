@@ -49,8 +49,9 @@ return packer.startup(function(use)
 
 
   -- Colorschemes
-  use "EdenEast/nightfox.nvim" -- Nightfox colorscheme
-  use 'folke/tokyonight.nvim' -- Tokyonight colorscheme
+  use "EdenEast/nightfox.nvim"   -- Nightfox colorscheme
+  use 'folke/tokyonight.nvim'    -- Tokyonight colorscheme
+  use "ellisonleao/gruvbox.nvim" -- gruvbox colorscheme
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp"    -- The completion plugin
