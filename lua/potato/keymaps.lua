@@ -77,7 +77,7 @@ if not com_status then
   print("Something went wrong with the comment plugin")
   return
 end
-print("I got to import com!", com)
+-- print("I got to import com!", com)
 com.setup()
 
 keymap("n", "<C-p>", "gcc", opts)
