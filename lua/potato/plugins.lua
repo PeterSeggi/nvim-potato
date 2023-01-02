@@ -54,15 +54,17 @@ return packer.startup(function(use)
   use "ellisonleao/gruvbox.nvim" -- gruvbox colorscheme
 
   -- cmp plugins
-  use "hrsh7th/nvim-cmp"    -- The completion plugin
-  use "hrsh7th/cmp-buffer"  -- buffer completions
-  use "hrsh7th/cmp-path"    -- path completitions
-  use "hrsh7th/cmp-cmdline" -- comand line completitions
+  use "hrsh7th/nvim-cmp"     -- The completion plugin
+  use "hrsh7th/cmp-buffer"   -- buffer completions
+  use "hrsh7th/cmp-nvim-lsp" -- lsp completion
 
   -- snippet plugins
   use "L3MON4D3/LuaSnip"             -- main snip plugins
   use "saadparwaiz1/cmp_luasnip"     -- snippet completitions
   use "rafamadriz/friendly-snippets" -- various snippets
+
+  -- lsp provider
+  use "neovim/nvim-lspconfig" -- lsp provider
   
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
