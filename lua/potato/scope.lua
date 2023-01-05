@@ -1,4 +1,12 @@
-require('telescope').setup{
+local status, telescope = pcall(require, "telescope")
+if not status then
+  print("Something went wrong requiring telescope")
+  return
+end
+
+local actions = require("telescope.actions")
+
+telescope.setup {
   defaults = {
     -- Default configuration for telescope goes here:
     -- config_key = value,
@@ -8,6 +16,9 @@ require('telescope').setup{
         -- actions.which_key shows the mappings for your picker,
         -- e.g. git_{create, delete, ...}_branch for the git_branches picker
         ["<C-h>"] = "which_key"
+      },
+      n = {
+        ["q"] = actions.close
       }
     }
   },
