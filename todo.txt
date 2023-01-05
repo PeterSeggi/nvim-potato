@@ -1,6 +1,5 @@
 - Fix the commenting plugin with ctrl /
 - Add auto insert mode on new file
-- Add symbols to the warnings and the like
 
 Dependecies:
   npm
