@@ -5,4 +5,4 @@ if not status then
 end
 
 require "potato.lsp.config"
-
+require "potato.lsp.uiconfig"
