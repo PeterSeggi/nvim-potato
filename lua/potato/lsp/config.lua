@@ -31,8 +31,16 @@ end
 
 for _, lsp in ipairs(servers) do
 
+  local settings_special = {}
+
+  local set_status, set = pcall(require, "potato.lsp.settings." .. lsp)
+  if set_status then
+    settings_special =  set
+  end
+
   lspconfig[lsp].setup {
     on_attach = require("potato.lsp.handler").on_attach,
-    capabilities = require("potato.lsp.handler").capabilities
+    capabilities = require("potato.lsp.handler").capabilities,
+    settings = settings_special
   }
 end
