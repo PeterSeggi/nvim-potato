@@ -41,7 +41,7 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
-  
+
   -- General purpose plugins go here 
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
@@ -71,6 +71,11 @@ return packer.startup(function(use)
   -- Telescope
   use "nvim-telescope/telescope.nvim" -- Telescope!
 
+  -- Treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
