@@ -27,7 +27,7 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 
 keymap("n", "<S-w>", "b", opts)
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
-
+keymap("n", "<leader>q", ":noh<cr>", opts)
 
 
 
