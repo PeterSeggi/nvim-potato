@@ -47,6 +47,7 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "numToStr/Comment.nvim" -- Comment plugin
+  use "windwp/nvim-autopairs" -- Autopairs for {([])}
 
   -- Colorschemes
   use "EdenEast/nightfox.nvim"   -- Nightfox colorscheme
