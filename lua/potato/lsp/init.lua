@@ -5,4 +5,5 @@ if not status then
 end
 
 require "potato.lsp.config"
+-- require("potato.lsp.handler").setup()
 require "potato.lsp.uiconfig"
