@@ -1,5 +1,18 @@
 local M = {}
 
+local formatOptions =
+{
+    tabStop = 4
+}
+
+M.setup = function()
+  -- vim.lsp.handlers["textDocument/formatting"] = vim.lsp.with(vim.lsp.handlers.formatting, {
+  --   tabSize = 4,
+  -- })
+    vim.lsp.buf.formatting(formatOptions)
+
+end
+
 local function lsp_highlight_document(client)
   -- Set autocommands conditional on server_capabilities
   if client.server_capabilities.documentHighlight then
@@ -10,7 +23,7 @@ local function lsp_highlight_document(client)
         autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
         autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
       augroup END
-    ]],
+    ]] ,
       false
     )
   end
@@ -19,7 +32,7 @@ end
 local function lsp_keymaps(bufnr)
   -- Mappings.
   -- See `:help vim.lsp.*` for documentation on any of the below functions
-  local bufopts = { noremap=true, silent=true, buffer=bufnr }
+  local bufopts = { noremap = true, silent = true, buffer = bufnr }
   vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
@@ -34,7 +47,7 @@ local function lsp_keymaps(bufnr)
   vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
   vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
-  vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
+  vim.keymap.set('n', '<space>fr', function() vim.lsp.buf.format { async = true } end, bufopts)
   vim.keymap.set('n', 'gl', vim.diagnostic.open_float, bufopts)
 end
 
