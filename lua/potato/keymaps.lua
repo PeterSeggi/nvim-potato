@@ -26,7 +26,7 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 keymap("n", "<S-w>", "b", opts)
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 keymap("n", "<leader>q", ":noh<cr>", opts)
 
 -- Resize with arrows
@@ -40,7 +40,7 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Insert --
--- Press jk fast to enter
+-- Press jk fast to exit
 keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
@@ -68,5 +68,5 @@ end
 -- print("I got to import com!", com)
 com.setup()
 
-keymap("n", "<C-p>", "gcc", opts)
-keymap("v", "<C-/>", "gc<CR>", opts)
+keymap("n", "<C-p>", "<cmd>gcc<CR>", opts)
+keymap("v", "<C-/>", "<cmd>gc<CR>", opts)

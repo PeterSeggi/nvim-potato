@@ -48,6 +48,7 @@ return packer.startup(function(use)
     use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
     use "numToStr/Comment.nvim" -- Comment plugin
     use "windwp/nvim-autopairs" -- Autopairs for {([])}
+    use 'nvim-tree/nvim-web-devicons' -- icons for tree
 
     -- Colorschemes
     use "EdenEast/nightfox.nvim" -- Nightfox colorscheme
@@ -81,6 +82,9 @@ return packer.startup(function(use)
     -- Github
     use "lewis6991/gitsigns.nvim" -- github signs
     use "feline-nvim/feline.nvim" -- Git status bar
+
+    -- Nvim tree
+    use 'nvim-tree/nvim-tree.lua' -- nvim tree
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
