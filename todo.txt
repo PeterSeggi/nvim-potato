@@ -2,5 +2,5 @@
 - Add auto insert mode on new file
 
 Dependecies:
-  npm
+  npm v>=12.0
   ripgrep
