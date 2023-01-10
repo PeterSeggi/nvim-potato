@@ -62,8 +62,8 @@ keymap("n", "<leader>c", "<cmd>Telescope spell_suggest<cr>", opts)
 -- Comment --
 local com_status, com = pcall(require, 'Comment')
 if not com_status then
-  print("Something went wrong with the comment plugin")
-  return
+    print("Something went wrong with the comment plugin")
+    return
 end
 -- print("I got to import com!", com)
 com.setup()
