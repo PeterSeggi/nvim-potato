@@ -80,6 +80,7 @@ return packer.startup(function(use)
 
     -- Github
     use "lewis6991/gitsigns.nvim" -- github signs
+    use "feline-nvim/feline.nvim" -- Git status bar
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
