@@ -1,5 +1,5 @@
 local servers = {
-    "sumneko_lua",
+    "lua_ls",
     "pyright",
     "clangd",
     "rust_analyzer"
