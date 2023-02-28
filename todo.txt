@@ -7,3 +7,7 @@
 Dependecies:
   npm v>=12.0
   ripgrep
+
+
+sudo apt install npm
+sudo apt-get install ripgrep
