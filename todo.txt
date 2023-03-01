@@ -3,6 +3,7 @@
 - Fix the gitsigns commands
 - Config nvim tree
 - Fix the c auto format
+- Add xml lsp
 
 Dependecies:
   npm v>=12.0
