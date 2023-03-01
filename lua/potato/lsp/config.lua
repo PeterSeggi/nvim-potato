@@ -3,7 +3,8 @@ local servers = {
     "pyright",
     "clangd",
     "rust_analyzer",
-    "lemminx"
+    "lemminx",
+    "jdtls",
 }
 
 
