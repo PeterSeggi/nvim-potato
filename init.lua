@@ -8,5 +8,9 @@ require "potato.scope"
 require "potato.sitter"
 require "potato.autopairs"
 require "potato.gitsigns"
-require "potato.feline"
 require "potato.tree"
+require "potato.lualine"
+
+-- DO NOT uncomment this if there is a lualine config already uncommented
+-- Full disclosure, not sure what would happen but feel free to try
+-- require "potato.feline"

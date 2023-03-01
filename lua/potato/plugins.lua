@@ -81,7 +81,7 @@ return packer.startup(function(use)
 
     -- Github
     use "lewis6991/gitsigns.nvim" -- github signs
-    use "feline-nvim/feline.nvim" -- Git status bar
+    use "nvim-lualine/lualine.nvim" -- Git status bar
 
     -- Nvim tree
     use 'nvim-tree/nvim-tree.lua' -- nvim tree
