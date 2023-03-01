@@ -2,7 +2,8 @@ local servers = {
     "lua_ls",
     "pyright",
     "clangd",
-    "rust_analyzer"
+    "rust_analyzer",
+    "lemminx"
 }
 
 
