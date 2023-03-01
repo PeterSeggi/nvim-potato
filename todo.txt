@@ -4,6 +4,7 @@
 - Config nvim tree
 - Fix the c auto format
 - Add xml lsp
+- Add java lsp
 
 Dependecies:
   npm v>=12.0
