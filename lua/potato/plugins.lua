@@ -49,6 +49,7 @@ return packer.startup(function(use)
     use "numToStr/Comment.nvim" -- Comment plugin
     use "windwp/nvim-autopairs" -- Autopairs for {([])}
     use 'nvim-tree/nvim-web-devicons' -- icons for tree
+    use "startup-nvim/startup.nvim" -- startup page
 
     -- Colorschemes
     use "EdenEast/nightfox.nvim" -- Nightfox colorscheme

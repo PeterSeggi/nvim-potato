@@ -10,6 +10,7 @@ require "potato.autopairs"
 require "potato.gitsigns"
 require "potato.tree"
 require "potato.lualine"
+require "potato.startup"
 
 -- DO NOT uncomment this if there is a lualine config already uncommented
 -- Full disclosure, not sure what would happen but feel free to try
