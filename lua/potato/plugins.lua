@@ -70,6 +70,7 @@ return packer.startup(function(use)
     use "neovim/nvim-lspconfig" -- lsp provider
     use "williamboman/mason.nvim" -- lsp installer
     use "williamboman/mason-lspconfig.nvim" -- bridge between mason and lspconfig
+    use "mfussenegger/nvim-jdtls" -- jdtls config because fuck you thats why
 
     -- Telescope
     use "nvim-telescope/telescope.nvim" -- Telescope!
