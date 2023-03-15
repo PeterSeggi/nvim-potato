@@ -5,5 +5,5 @@ if not status then
 end
 
 line.setup{
-    options = {theme = 'gruvbox'}
+    options = {theme = 'onedark'}
 }

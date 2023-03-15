@@ -1,4 +1,4 @@
-local colorscheme = "gruvbox"
+local colorscheme = "onedark"
 
 local status_ok, call = pcall(vim.cmd, "colorscheme " .. colorscheme)
 
