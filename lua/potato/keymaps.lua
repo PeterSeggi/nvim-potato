@@ -59,6 +59,10 @@ keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<leader>b", "<cmd>Telescope buffers<cr>", opts)
 keymap("n", "<leader>c", "<cmd>Telescope spell_suggest<cr>", opts)
 
+-- Lsp stuff
+
+keymap("n", "<leader>d", ":lua vim.diagnostic.open_float(0, {scope='line'})<CR>>", opts)
+
 -- Comment --
 local com_status, com = pcall(require, 'Comment')
 if not com_status then

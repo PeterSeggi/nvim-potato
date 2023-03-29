@@ -7,7 +7,7 @@ end
 
 
 vim.diagnostic.config({
-    virtual_text = true,
+    virtual_text = false,
     signs = signs,
     underline = true,
     update_in_insert = false,
