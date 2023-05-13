@@ -92,6 +92,10 @@ return packer.startup(function(use)
     -- Bufferline
     use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
+    -- Transparency
+    use 'xiyaowong/transparent.nvim' -- transparent background
+--  use 'tribela/vim-transparent' -- secondary one but works with bufferline and feline
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then

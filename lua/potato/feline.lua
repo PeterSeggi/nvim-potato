@@ -1,3 +1,6 @@
+
+-- Havent a fucking clue what type of purgatory I had to deal with configuring this mf
+
 local status, feline = pcall(require, "feline")
 if not status then
     print("Something went wrong importing feline")
@@ -248,3 +251,5 @@ feline.setup({
     components = components,
     vi_mode_colors = MODE_COLORS,
 })
+
+

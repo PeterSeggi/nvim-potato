@@ -13,6 +13,9 @@ require "potato.lualine"
 require "potato.startup"
 require "potato.bufferline"
 
+-- Mental note: due to the transparent thingy working with other congigs like bufferline its better to keep it at the bottom
+require "potato.transparent"
+
 -- DO NOT uncomment this if there is a lualine config already uncommented
 -- Full disclosure, not sure what would happen but feel free to try
 -- require "potato.feline"
