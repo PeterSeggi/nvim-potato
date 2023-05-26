@@ -4,6 +4,7 @@ local servers = {
     "clangd",
     "rust_analyzer",
     "lemminx",
+    "solargraph",
 }
 
 
