@@ -56,6 +56,7 @@ return packer.startup(function(use)
     use 'folke/tokyonight.nvim' -- Tokyonight colorscheme
     use "ellisonleao/gruvbox.nvim" -- gruvbox colorscheme
     use 'navarasu/onedark.nvim' -- onedark prettier
+    use "rebelot/kanagawa.nvim"
 
     -- cmp plugins
     use "hrsh7th/nvim-cmp" -- The completion plugin
