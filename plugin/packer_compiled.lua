@@ -199,6 +199,11 @@ _G.packer_plugins = {
     path = "/home/peter/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
+  ["preview-asciidoc.nvim"] = {
+    loaded = true,
+    path = "/home/peter/.local/share/nvim/site/pack/packer/start/preview-asciidoc.nvim",
+    url = "https://github.com/shuntaka9576/preview-asciidoc.nvim"
+  },
   ["startup.nvim"] = {
     loaded = true,
     path = "/home/peter/.local/share/nvim/site/pack/packer/start/startup.nvim",

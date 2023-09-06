@@ -50,6 +50,7 @@ return packer.startup(function(use)
     use "windwp/nvim-autopairs" -- Autopairs for {([])}
     use 'nvim-tree/nvim-web-devicons' -- icons for tree
     use "startup-nvim/startup.nvim" -- startup page
+    use "shuntaka9576/preview-asciidoc.nvim"
 
     -- Colorschemes
     use "EdenEast/nightfox.nvim" -- Nightfox colorscheme
