@@ -58,6 +58,7 @@ return packer.startup(function(use)
     use "ellisonleao/gruvbox.nvim" -- gruvbox colorscheme
     use 'navarasu/onedark.nvim' -- onedark prettier
     use "rebelot/kanagawa.nvim"
+    use "tanvirtin/monokai.nvim" -- monokai
 
     -- cmp plugins
     use "hrsh7th/nvim-cmp" -- The completion plugin
