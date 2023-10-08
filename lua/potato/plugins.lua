@@ -45,12 +45,15 @@ return packer.startup(function(use)
     -- General purpose plugins go here
     use "wbthomason/packer.nvim" -- Have packer manage itself
     use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-    use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+    use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
     use "numToStr/Comment.nvim" -- Comment plugin
     use "windwp/nvim-autopairs" -- Autopairs for {([])}
     use 'nvim-tree/nvim-web-devicons' -- icons for tree
     use "startup-nvim/startup.nvim" -- startup page
-    use "shuntaka9576/preview-asciidoc.nvim"
+    use "shuntaka9576/preview-asciidoc.nvim" -- asciidoc que asco 
+
+    -- Tmux 
+    use "christoomey/vim-tmux-navigator"
 
     -- Colorschemes
     use "EdenEast/nightfox.nvim" -- Nightfox colorscheme

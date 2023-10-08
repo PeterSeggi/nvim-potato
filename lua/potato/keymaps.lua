@@ -20,10 +20,20 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Better window navigation
+--[[
+-- Aca tengo la mierda sin tmux pero voy a usar tmux como default asiq si no lo estas usando, saca esto
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
+--]]
+
+-- Tmux controls
+keymap("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>", opts)
+keymap("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", opts)
+keymap("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>", opts)
+keymap("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", opts)
+
 
 keymap("n", "<S-w>", "b", opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
