@@ -63,6 +63,8 @@ return packer.startup(function(use)
     use "rebelot/kanagawa.nvim"
     use "tanvirtin/monokai.nvim" -- monokai
     use {"catppuccin/nvim", as = "catppuccin"}
+    use "jacoborus/tender.vim" -- tender colors
+    use 'Mofiqul/vscode.nvim' -- vs code
 
     -- cmp plugins
     use "hrsh7th/nvim-cmp" -- The completion plugin
