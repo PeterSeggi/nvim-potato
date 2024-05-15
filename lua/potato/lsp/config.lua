@@ -6,6 +6,7 @@ local servers = {
     "lemminx",
     "solargraph",
     "eslint",
+    "volar",
 }
 
 
