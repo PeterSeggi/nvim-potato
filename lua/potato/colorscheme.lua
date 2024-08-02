@@ -1,4 +1,4 @@
-local colorscheme = "vscode"
+local colorscheme = "catppuccin-mocha"
 
 local status_ok, call = pcall(vim.cmd, "colorscheme " .. colorscheme)
 
