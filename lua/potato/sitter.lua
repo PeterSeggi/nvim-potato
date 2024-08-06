@@ -6,6 +6,7 @@ end
 
 tree.setup {
     -- A list of parser names, or "all"
+    -- Lmao soy un *pajero* por dejarlo en all no wonders anda lento en la pc
     ensure_installed = "all",
 
     -- Install parsers synchronously (only applied to `ensure_installed`)
