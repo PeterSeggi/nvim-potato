@@ -12,6 +12,10 @@ require "potato.tree"
 require "potato.lualine"
 require "potato.startup"
 require "potato.bufferline"
+require "potato.null-ls"
+
+-- Deja esto comentado a menos que estes con un proyecto que utilice prettier. Sino te va a aparecer un warning cuando no lo usas
+-- require "potato.prettier"
 
 -- Mental note: due to the transparent thingy working with other configs like bufferline its better to keep it at the bottom
 -- require "potato.transparent"

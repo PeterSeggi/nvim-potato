@@ -81,6 +81,8 @@ return packer.startup(function(use)
     use "williamboman/mason.nvim" -- lsp installer
     use "williamboman/mason-lspconfig.nvim" -- bridge between mason and lspconfig
     use "mfussenegger/nvim-jdtls" -- jdtls config because fuck you thats why
+    use('jose-elias-alvarez/null-ls.nvim')
+    use('MunifTanjim/prettier.nvim')
 
     -- Telescope
     use "nvim-telescope/telescope.nvim" -- Telescope!
